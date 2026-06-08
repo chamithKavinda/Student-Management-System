@@ -20,6 +20,7 @@ namespace Excersice01_StudentManagementSystem
         {
             get { return age; }
             set
+
             {
                 if (value >= 0 && value <= 120)
                 {
