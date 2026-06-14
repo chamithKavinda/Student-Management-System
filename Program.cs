@@ -1,48 +1,45 @@
-﻿namespace Excersice01_StudentManagementSystem;
-
-class Program
+﻿namespace Excersice01_StudentManagementSystem
 {
-    static void Main(string[] args)
+    class Program
     {
-        // Create Student object
-        Student student = new Student("Test Student", 20, "S001");
+        static void Main(string[] args)
+        {
+            Student student =
+                new Student("Test Student", 20, "S001");
 
-        // Create UndergraduateStudent object
-        UndergraduateStudent undergrad =
-            new UndergraduateStudent(
-                "Chamith Kavinda",
-                25,
-                "U001",
-                "Computer Science",
-                3);
+            UndergraduateStudent undergrad =
+                new UndergraduateStudent(
+                    "Chamith Kavinda",
+                    25,
+                    "U001",
+                    "Computer Science",
+                    3);
 
-        // Create GraduateStudent object
-        GraduateStudent graduate =
-            new GraduateStudent(
-                "Chamith Kavinda",
-                25,
-                "G001",
-                "Artificial Intelligence in Education",
-                "Dr. Chamila");
+            GraduateStudent graduate =
+                new GraduateStudent(
+                    "Chamith Kavinda",
+                    25,
+                    "G001",
+                    "AI in Education",
+                    "Dr. Chamila");
 
-        // Demonstrate modifying properties
-        student.Age = 22;
-        undergrad.Major = "Software Engineering";
-        graduate.AdvisorName = "Dr. Sahan";
+            //student.Age = 22;
+            //undergrad.Major = "Software Engineering";
+            //graduate.AdvisorName = "Dr. Sahan";
 
-        Console.WriteLine("===== STUDENT =====");
-        student.DisplayBasicInfo();
-        student.GetDetails();
+            Console.WriteLine("===== STUDENT =====");
+            student.DisplayBasicInfo();
+            student.GetDetails();
 
-        Console.WriteLine("\n===== UNDERGRADUATE STUDENT =====");
-        undergrad.DisplayBasicInfo();
-        undergrad.GetDetails();
+            Console.WriteLine("\n===== UNDERGRADUATE =====");
+            undergrad.DisplayBasicInfo();
+            undergrad.GetDetails();
 
-        Console.WriteLine("\n===== GRADUATE STUDENT =====");
-        graduate.DisplayBasicInfo();
-        graduate.GetDetails();
+            Console.WriteLine("\n===== GRADUATE =====");
+            graduate.DisplayBasicInfo();
+            graduate.GetDetails();
 
-        Console.ReadLine();
+            Console.ReadLine();
+        }
     }
 }
-
